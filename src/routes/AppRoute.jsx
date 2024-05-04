@@ -5,6 +5,7 @@ import { AppContext } from '../contexts';
 
 const AppRoute = () => {
   const { isLogin } = useContext(AppContext);
+  console.log(isLogin);
   return isLogin ? <HomeRoute /> : <AuthenticateRoute />;
 };
 

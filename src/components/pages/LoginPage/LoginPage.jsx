@@ -13,7 +13,7 @@ const LoginPage = () => {
   const loginToApp = () => {
     ListAccount.forEach((item) => {
       if (item.username === username && item.password === password) {
-        setIsSignIn(item.fullname);
+        setIsSignIn(true, item.fullname);
         alert('Successfully Login');
       } else {
         alert('Failure Login');
